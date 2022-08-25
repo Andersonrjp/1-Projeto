@@ -1,0 +1,145 @@
+* {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: burlywood;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./pexels-photo-998641.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 15px ridge white;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    margin-top: auto;
+}
+
+header ul li a:hover {
+    color: rgb(243, 240, 238);
+    text-decoration: underline;
+}
+
+header ul li a:hover {
+    transition: 500ms;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .nome h1 {
+    font-size: 40px;
+}
+
+.container .nome h5 {
+    font-size: 20px;
+}
+
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 700ms steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 40px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 2px;
+    background-color: rgb(218, 138, 34);
+    color: rgb(6, 6, 6);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.form button:hover {
+    background-color: #9c551b;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container .name h1 {
+        text-align: justify;
+    }
+
+    .container .name h5 {
+        font-size: 55px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}

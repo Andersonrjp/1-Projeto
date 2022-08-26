@@ -11,6 +11,7 @@ ul {
     list-style: none;
     font-size: 15px;
     font-style: italic;
+    gap: 20px;
 }
 
 a {
@@ -27,7 +28,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    border-bottom: 15px ridge white;
+    border-bottom: 15px ridge #fff;
     margin-bottom: 45px;
     text-align: center;
 }
@@ -75,7 +76,7 @@ header ul li a:hover {
 }
 
 #animation {
-    transition: 300ms;
+    transition: 200ms;
 }
 
 .rotate {
@@ -121,25 +122,25 @@ header ul li a:hover {
     color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 560px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .nome h1 {
+        font-size: 30px;
+    }
+
+    main {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
     .form {
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 480px) {
-
-    .container .name h1 {
-        text-align: justify;
-    }
-
-    .container .name h5 {
-        font-size: 55px;
-    }
-
-    #about p {
-        max-width: 80%;
-        text-align: justify;
-    }
-
-}
